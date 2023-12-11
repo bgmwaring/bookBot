@@ -1,5 +1,6 @@
 # Book Bot
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
 Book Bot is a python command line program that takes a text file as input and details its word and character counts. This project was mainly intended as practice as its function is not novel.
 
 ### Status
