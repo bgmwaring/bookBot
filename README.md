@@ -4,13 +4,18 @@
 Book Bot is a python program that takes a text file as input and details its word and character counts. This project was mainly intended as practice as its function is not novel. Currently Book Bot runs on a Gooey produced GUI.
 
 ### Status
-Although this is a completed project, I will be looking to use it as practice in publishing a project. Gooey allows for a simple packaging process, I will be looking to use this in the near future.
+This is a completed project and I am unlikely to return to it.
 
 ## Installation
 
 This repo can be cloned directly to your device. It uses Gooey library so this will need to be installed.
 ```
 pip install Gooey
+```
+You can also use pyinstaller to package this program into a .EXE file. Within the analysis section of the build.spec file you will need to change the pathex arguemnt to whatever path you have cloned the repo to.
+```
+pip install pyinstaller
+pyinstaller build.spec
 ```
 
 ## Usage
