@@ -1,5 +1,10 @@
-def main():
-    book_path = "books/frankenstein.txt"
+from gooey import Gooey, GooeyParser
+from argparse import ArgumentParser
+
+
+def output(args=None):
+    
+    book_path = args.file_path
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict(text)
@@ -15,6 +20,26 @@ def main():
         print(f"The '{item['char']}' character was found {item['num']} times")
 
     print("--- End ---")
+
+
+@Gooey(
+        program_name="Book Bot"
+)
+def main():
+    parser = GooeyParser()
+
+    gp = parser.add_argument_group("Group 1")
+    gp.add_argument(
+        "-a",
+        "--file_path",
+        metavar="File Chooser",
+        help="Choose a .txt file",
+        widget="FileChooser",
+        gooey_options=dict(wildcard="Text (.txt) | *.txt"),
+    )
+
+    args = parser.parse_args()
+    output(args)
 
 
 def get_num_words(text):
@@ -50,4 +75,5 @@ def get_book_text(path):
         return f.read()
 
 
-main()
+if __name__ == "__main__":
+    main()
