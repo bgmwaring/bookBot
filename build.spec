@@ -6,7 +6,7 @@ gooey_root = os.path.dirname(gooey.__file__)
 block_cipher = None
 
 a = Analysis(['main.py'],  # replace me with your path
-             pathex=['C:/Users/Ben Waring/workspace/bookBot/main.py'],
+             pathex=['path/main.py'],
              binaries=[],
              datas=[],
              hiddenimports=[],
