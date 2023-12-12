@@ -12,11 +12,6 @@ This repo can be cloned directly to your device. It uses Gooey library so this w
 ```
 pip install Gooey
 ```
-You can also use pyinstaller to package this program into a .EXE file. Within the analysis section of the build.spec file you will need to change the pathex arguemnt to whatever path you have cloned the repo to.
-```
-pip install pyinstaller
-pyinstaller build.spec
-```
 
 ## Usage
 
