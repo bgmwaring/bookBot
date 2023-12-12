@@ -4,7 +4,7 @@
 Book Bot is a python program that takes a text file as input and details its word and character counts. This project was mainly intended as practice as its function is not novel. Currently Book Bot runs on a Gooey produced GUI.
 
 ### Status
-This is a completed project and I am unlikely to return to it.
+This is a completed project but I am currently using it to learn how PyPI and python publishing works.
 
 ## Installation
 
